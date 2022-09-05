@@ -9,8 +9,6 @@ This is a simple voting system for learn more about next.js
 3. Run `npm run dev`
 4. Open `http://localhost:3000`
 
-
-
 ## How to contribute
 
 1. Fork this repo

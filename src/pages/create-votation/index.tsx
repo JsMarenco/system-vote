@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Box, Typography, TextField, IconButton, Stack, Button } from '@mui/material'
 import Header from '../../components/Header'
-import { containerV1, mainContainerV2 } from '../../styles/containers'
+import { containerV1 } from '../../styles/containers'
 import { inputStyle } from '../../styles/inputs'
 import { PhotoCamera } from '@mui/icons-material'
 import { containedButtonStyle } from '../../styles/buttons'

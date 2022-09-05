@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <Button
           variant="outlined"
           color="primary"
-          href="/login/"
+          href="/login"
         >
           Login
         </Button>

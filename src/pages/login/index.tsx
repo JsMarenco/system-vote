@@ -54,7 +54,7 @@ export default function Login() {
             sx={{ fontWeight: 300, mb: 2, }}
             align="center"
           >
-            Forgot password? <Link href="/reset-password/">Reset</Link>
+            Forgot password? <Link href="/reset-password">Reset</Link>
           </Typography>
 
           <Stack
@@ -64,7 +64,7 @@ export default function Login() {
             <Button
               variant="text"
               sx={outlinedButtonStyle}
-              href="/dashboard/"
+              href="/dashboard"
               disabled={!(email && password)}
             >
               Login
@@ -73,7 +73,7 @@ export default function Login() {
             <Button
               variant="text"
               sx={containedButtonStyle}
-              href="/register/"
+              href="/register"
             >
               Register
             </Button>
