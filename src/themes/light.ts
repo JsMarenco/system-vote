@@ -48,8 +48,8 @@ const Theme = createTheme({
       selectedOpacity: 0.08,
     },
     background: {
-      default: '#fff',
-      paper: '#ededed',
+      default: '#ededed',
+      paper: '#fff',
     }
   },
   typography: {
