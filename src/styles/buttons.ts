@@ -4,7 +4,8 @@ export const containedButtonStyle = {
   borderWidth: '1px',
   borderStyle: 'solid',
   bgcolor: 'primary.dark',
-  width: '300px',
+  width: '100%',
+  maxWidth: '250px',
   '&:hover': {
     borderColor: 'primary.dark',
     bgcolor: 'background.paper',
@@ -18,7 +19,8 @@ export const outlinedButtonStyle = {
   borderWidth: '1px',
   borderStyle: 'solid',
   bgcolor: 'background.paper',
-  width: '300px',
+  width: '100%',
+  maxWidth: '250px',
   '&:hover': {
     borderColor: 'primary.dark',
     bgcolor: 'primary.dark',

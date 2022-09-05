@@ -12,6 +12,13 @@ export const containerV1 = {
   borderRadius: '15px',
   p: 2,
   boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)',
-  m: 2,
+  mx: 'auto',
   bgcolor: 'background.paper',
+}
+
+export const mainContainerV2 = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
 }
