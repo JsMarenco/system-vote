@@ -2,7 +2,7 @@ import { useState } from 'react'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import ShareIcon from '@mui/icons-material/Share'
 import VotationProps from '../../interfaces/VotationProps'
-import { convertDate, convertDateFuture } from '../../utils'
+// import { convertDate, convertDateFuture } from '../../utils'
 import { containerV1 } from '../../styles/containers'
 import {
   Avatar, Box, Card, CardActions, CardContent,
@@ -23,7 +23,7 @@ export default function VotationCard(props: VotationProps) {
     imageUri,
     imageAlt,
     startTime,
-    endTime,
+    // endTime,
     likes,
     shares,
   } = props
@@ -57,7 +57,7 @@ export default function VotationCard(props: VotationProps) {
           }
 
           title={`${name} ${lastName}`}
-          subheader={`${convertDate(startTime)} - ${convertDateFuture(endTime)}`}
+          subheader={`Posted on ${startTime}`}
         />
 
         <CardMedia
@@ -67,7 +67,7 @@ export default function VotationCard(props: VotationProps) {
           sx={{
             borderRadius: 2,
             overflow: 'hidden',
-            width: '95%',
+            width: '95%', 
             mx: 'auto',
           }}
         />

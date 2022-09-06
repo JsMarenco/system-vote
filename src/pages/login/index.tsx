@@ -54,7 +54,7 @@ export default function Login() {
             sx={{ fontWeight: 300, mb: 2, }}
             align="center"
           >
-            Forgot password? <Link href="/reset-password">Reset</Link>
+            Forgot password? <Link href="/forgot-password">Reset</Link>
           </Typography>
 
           <Stack
