@@ -2,9 +2,10 @@
   "name": "system-vote",
   "version": "0.1.0",
   "private": true,
+  "description": "A simple voting app",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
