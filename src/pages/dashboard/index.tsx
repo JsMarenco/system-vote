@@ -1,9 +1,9 @@
 import { Box, Stack, Typography } from '@mui/material'
 import Header from '../../components/Header'
+import VotationCard from '../../components/VotationCard'
+import votations from '../../data/votations.json'
 
 export default function Dashboard() {
-  const votations = []
-
   return (
     <>
       <Header />
@@ -46,6 +46,25 @@ export default function Dashboard() {
               >
                 Latest votations
               </Typography>
+
+              {
+                votations.map((votation, index) => (
+                  <VotationCard
+                    key={index}
+                    id={votation.id}
+                    title={votation.title}
+                    description={votation.description}
+                    imageUri={votation.imageUri}
+                    imageAlt={votation.imageAlt}
+                    startTime={votation.startTime}
+                    endTime={votation.endTime}
+                    user={votation.user}
+                    likes={votation.likes}
+                    dislikes={votation.dislikes}
+                    shares={votation.shares}
+                  />
+                ))
+              }
             </>
           )
         }
