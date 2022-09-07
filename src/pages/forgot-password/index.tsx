@@ -2,12 +2,16 @@ import { useState } from 'react'
 import { Box, Typography, TextField, Button } from '@mui/material'
 import { containedButtonStyle } from '../../styles/buttons'
 import { containerV1, mainContainer } from '../../styles/containers'
+import { FORGOT_PASSWORD_PAGE_DESCRIPTION } from '../../components/constants'
+import CustomHead from '../../components/CustomHead'
 
 export default function ForgotPassword() {
   const [apiMessage, setApiMessage] = useState('This is a message from the API')
 
   return (
     <>
+      <CustomHead title="Forgot Password" description={FORGOT_PASSWORD_PAGE_DESCRIPTION} />
+
       <Box sx={mainContainer}>
         <Box sx={containerV1} component="form" id="forgot-password-form">
           <Typography

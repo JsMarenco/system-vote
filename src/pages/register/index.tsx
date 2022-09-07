@@ -1,11 +1,14 @@
 import { Box, Typography, TextField, Button, Stack } from '@mui/material'
+import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
+import { REGISTER_PAGE_DESCRIPTION } from '../../components/constants'
+import CustomHead from '../../components/CustomHead'
 import { containedButtonStyle, outlinedButtonStyle } from '../../styles/buttons'
 import { mainContainer, containerV1 } from '../../styles/containers'
 import { inputStyle } from '../../styles/inputs'
 
-export default function Login() {
+export default function Resgister() {
   const [apiMessage, setApiMessage] = useState('This is a message from the API')
 
   const [fullName, setFullName] = useState('')
@@ -16,6 +19,8 @@ export default function Login() {
 
   return (
     <>
+      <CustomHead title="Register" description={REGISTER_PAGE_DESCRIPTION} />
+
       <Box sx={mainContainer}>
         <Box
           sx={containerV1}

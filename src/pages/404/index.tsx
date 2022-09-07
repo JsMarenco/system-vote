@@ -1,11 +1,15 @@
 import { Box, Typography, Button, Stack } from '@mui/material'
 import React from 'react'
+import { PAGE_NOT_FOUND_PAGE_DESCRIPTION } from '../../components/constants'
+import CustomHead from '../../components/CustomHead'
 import { outlinedButtonStyle } from '../../styles/buttons'
 import { mainContainer, containerV1 } from '../../styles/containers'
 
 export default function PageNotFound() {
   return (
     <>
+      <CustomHead title="Page Not Found" description={PAGE_NOT_FOUND_PAGE_DESCRIPTION} />
+
       <Box sx={mainContainer}>
         <Box sx={containerV1}>
           <Stack

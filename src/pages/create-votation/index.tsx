@@ -5,6 +5,8 @@ import { containerV1 } from '../../styles/containers'
 import { inputStyle } from '../../styles/inputs'
 import { PhotoCamera } from '@mui/icons-material'
 import { containedButtonStyle } from '../../styles/buttons'
+import CustomHead from '../../components/CustomHead'
+import { CREATE_VOTATION_PAGE_DESCRIPTION } from '../../components/constants'
 
 export default function CreateVotation() {
   const [apiMessage, setApiMessage] = useState('This is a message from the API')
@@ -17,6 +19,8 @@ export default function CreateVotation() {
 
   return (
     <>
+      <CustomHead title="Create Votation" description={CREATE_VOTATION_PAGE_DESCRIPTION} />
+
       <Header />
 
       <Box

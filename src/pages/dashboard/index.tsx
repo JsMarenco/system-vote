@@ -1,4 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material'
+import { DASHBOARD_PAGE_DESCRIPTION } from '../../components/constants'
+import CustomHead from '../../components/CustomHead'
 import Header from '../../components/Header'
 import VotationCard from '../../components/VotationCard'
 import votations from '../../data/votations.json'
@@ -6,6 +8,8 @@ import votations from '../../data/votations.json'
 export default function Dashboard() {
   return (
     <>
+      <CustomHead title='Dashboard' description={DASHBOARD_PAGE_DESCRIPTION} />
+
       <Header />
 
       <Stack

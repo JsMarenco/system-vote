@@ -4,10 +4,14 @@ import VotationCard from '../../components/VotationCard'
 import { containedButtonStyle } from '../../styles/buttons'
 import { mainContainerV2, containerV1 } from '../../styles/containers'
 import myVotations from '../../data/votations.json'
+import CustomHead from '../../components/CustomHead'
+import { MY_VOTATIONS_PAGE_DESCRIPTION } from '../../components/constants'
 
 export default function MyVotatiosn() {
   return (
     <>
+      <CustomHead title="My Votations" description={MY_VOTATIONS_PAGE_DESCRIPTION} />
+    
       <Header />
 
       <Stack
