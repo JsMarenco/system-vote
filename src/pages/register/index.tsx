@@ -8,7 +8,7 @@ import { containedButtonStyle, outlinedButtonStyle } from '../../styles/buttons'
 import { mainContainer, containerV1 } from '../../styles/containers'
 import { inputStyle } from '../../styles/inputs'
 
-export default function Resgister() {
+export default function Register() {
   const [apiMessage, setApiMessage] = useState('This is a message from the API')
 
   const [fullName, setFullName] = useState('')
@@ -30,10 +30,10 @@ export default function Resgister() {
           <Typography
             variant="h5"
             color="text.primary"
-            sx={{ fontWeight: 700 }}
+            sx={{ fontWeight: 700, mb: 1 }}
             align="center"
           >
-            Welcome back
+            Register now
           </Typography>
 
           <TextField
@@ -115,7 +115,7 @@ export default function Resgister() {
             <Button
               sx={outlinedButtonStyle}
               variant="text"
-              href="/register"
+              href="/login"
             >
               Login
             </Button>
