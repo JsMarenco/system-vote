@@ -2,6 +2,9 @@
 
 This is a simple voting system for learn more about next.js
 
+## Links to resources
+* [Figma design](https://www.figma.com/file/XAhUBDIZbq7JdKC1VU66Fd/System-vote?node-id=2%3A50)
+
 ## How to use
 
 1. Clone this repo
