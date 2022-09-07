@@ -9,7 +9,7 @@ export default interface VotationProps {
 
     name: string;
     lastName: string;
-    avatarUri: string;
+    avatarUri?: string;
   },
 
   imageUri?: string;
