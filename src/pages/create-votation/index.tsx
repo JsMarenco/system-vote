@@ -7,6 +7,8 @@ import { PhotoCamera } from '@mui/icons-material'
 import { containedButtonStyle } from '../../styles/buttons'
 
 export default function CreateVotation() {
+  const [apiMessage, setApiMessage] = useState('This is a message from the API')
+
   const [loading, setLoading] = useState(false)
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
@@ -123,6 +125,15 @@ export default function CreateVotation() {
           </IconButton>
         </label>
 
+        <Typography
+          variant="body2"
+          color="text.primary"
+          sx={{ fontWeight: 'bold', mb: 2, }}
+          align="center"
+        >
+          {apiMessage}
+        </Typography>
+
         <Button
           variant="text"
           sx={{
@@ -133,7 +144,7 @@ export default function CreateVotation() {
             color: 'common.white',
             mt: 1,
           }}
-          disabled={(!title || !description || !startDate || !endDate) || loading}
+          disabled={loading}
         >
           Save
         </Button>

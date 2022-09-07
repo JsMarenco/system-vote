@@ -1,8 +1,11 @@
+import { useState } from 'react'
 import { Box, Typography, TextField, Button } from '@mui/material'
 import { containedButtonStyle } from '../../styles/buttons'
 import { containerV1, mainContainer } from '../../styles/containers'
 
 export default function ForgotPassword() {
+  const [apiMessage, setApiMessage] = useState('This is a message from the API')
+
   return (
     <>
       <Box sx={mainContainer}>
@@ -39,6 +42,15 @@ export default function ForgotPassword() {
               mb: 2,
             }}
           />
+
+          <Typography
+            variant="body2"
+            color="text.primary"
+            sx={{ fontWeight: 700, mb: 2, }}
+            align="center"
+          >
+            {apiMessage}
+          </Typography>
 
           <Button
             variant="text"

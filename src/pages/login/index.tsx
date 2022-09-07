@@ -6,6 +6,8 @@ import { mainContainer, containerV1 } from '../../styles/containers'
 import { inputStyle } from '../../styles/inputs'
 
 export default function Login() {
+  const [apiMessage, setApiMessage] = useState('This is a message from the API')
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -47,6 +49,15 @@ export default function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+
+          <Typography
+            variant="body2"
+            color="text.primary"
+            sx={{ fontWeight: 700, mb: 2, }}
+            align="center"
+          >
+            {apiMessage}
+          </Typography>
 
           <Typography
             variant="body2"
